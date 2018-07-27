@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  </head>
+  <body>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="#">Empieza a usar este software para tu empresa o consulta particular!</a>
+            </div>
+            <!-- <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li> 
+                <li><a href="#">Page 3</a></li> 
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div> -->
+          </div>
+        </nav>
+      
+        <!-- MESSAGES -->
+      <div class="container">
+            <div class="alert alert-success alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+            <div class="alert alert-danger alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="container">
+            <div class="jumbotron">
+              <h3>Bienvenido a la clinica Santa Maria, pide tu hora en el siguiente formulario.</h3> 
+              <div class="panel panel-default">
+                  <!-- <div class="panel-heading">Panel Heading</div> -->
+                  <div class="panel-body">
+                      <h3></h3>
+                      <div class="row">
+                          <div class="col-sm-4">
+                          <h3>Centro Medico</h3>
+                          </div>
+                          <div class="col-sm-4">
+                              <h3>Fecha</h3>
+                          </div>
+                          <div class="col-sm-4">
+                              <h3>Datos</h3>
+                          </div>
+                      </div>
+                      <form action="/action_page.php">
+                        <div class="row">
+                          <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="sel1">Elige la especialidad:</label>
+                                    <select class="form-control" id="sel1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                      <div class="form-group">
+                                          <label for="sel1">Elige tu espcialista :</label>
+                                          <select class="form-control" id="sel1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                          </select>
+                                        </div>
+                                </div>
+                          </div>
+                          
+                          <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="sel1">Dia:</label>
+                                    <select class="form-control" id="sel1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                      <div class="form-group">
+                                          <label for="sel1">Hora :</label>
+                                          <select class="form-control" id="sel1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                          </select>
+                                        </div>
+                                </div>
+                          </div>
+
+                          <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="pwd">Nombres:</label>
+                                    <input type="text" class="form-control" id="pwd" placeholder="Nombre1 Nombre2" name="pwd">
+                                    <label for="pwd">Apellidos:</label>
+                                    <input type="text" class="form-control" id="pwd" placeholder="Apellido1 Apellido2" name="pwd">
+                                    <label for="pwd">Rut:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="99.999.999-9" name="pwd">
+                                    <label for="pwd">Correo:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="tucorreo@corre.cl" name="pwd">
+                                    <label for="pwd">Edad:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                  </div>
+                          </div>
+                        </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label for="comment">Quieres enviar un comentario?</label>
+                                      <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                              </div>
+                              
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-12">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="remember"> Remember me</label>
+                                  </div>
+                                  <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="panel-footer">
+                      <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            70%
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  
+                </div>
+            </div>
+      </div>
+      <!-- Footer -->
+      <!-- Footer -->
+  <footer class="page-footer font-small cyan darken-3">
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Grid row-->
+        <div class="row">
+  
+          <!-- Grid column -->
+          <div class="col-md-12 py-5">
+            <div class="mb-5 flex-center">
+  
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook fa-2x"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-2x"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus fa-2x"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin fa-2x"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-2x"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Footer Elements -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="#"> digitalclinic.cl</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  <script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+  </script>
+    </body>   
+</html>
