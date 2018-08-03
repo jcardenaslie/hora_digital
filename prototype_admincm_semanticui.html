@@ -29,227 +29,312 @@
 
 <body>
     <!-- NAVBAR -->
-      <div class="ui huge menu">
-          <a class="active item">Admin</a>
-          <a class="item">Funcionario</a>
-          <div class="right menu">
-              <div class="item">
-                  <div class="ui primary button">Sign In</div>
-              </div>
-              <div class="item">
-                  <div class="ui primary button">Sign Up</div>
-              </div>
-          </div>
-      </div>
-
+    <div class="ui huge menu">
+        <a class="active item">Admin</a>
+        <a class="item">Funcionario</a>
+        <div class="right menu">
+            <div class="item">
+                <div class="ui primary button">Sign In</div>
+            </div>
+            <div class="item">
+                <div class="ui primary button">Sign Up</div>
+            </div>
+        </div>
+    </div>
     <!-- DASHBOARD -->
-      <div class="ui center aligned container">
-          <h1>CENTRO MEDICO DASHBOARD</h1>
-
-          <!-- MESSAGES -->
-            <div class="ui positive message">
-                <i class="close icon"></i>
-                <div class="header">
-                    Procecidiemto exitoso!
-                </div>
-                <p>This is a special notification which you can dismiss if you're bored with it.</p>
+    <div class="ui center aligned container">
+        <h1>CENTRO MEDICO DASHBOARD</h1>
+        <!-- MESSAGES -->
+        <div class="ui positive message">
+            <i class="close icon"></i>
+            <div class="header">
+                Procecidiemto exitoso!
             </div>
-            <div class="ui negative message">
-                <i class="close icon"></i>
-                <div class="header">
-                    Algo salio mal!
-                </div>
-                <p>This is a special notification which you can dismiss if you're bored with it.</p>
+            <p>This is a special notification which you can dismiss if you're bored with it.</p>
+        </div>
+        <div class="ui negative message">
+            <i class="close icon"></i>
+            <div class="header">
+                Algo salio mal!
             </div>
-          
-          <!-- CREAR EQUIPO -->
-            <div class="ui large fluid blue buttons">
-                <button class="ui button" id='crear_sucursal'>Crear Sucursal</button>
+            <p>This is a special notification which you can dismiss if you're bored with it.</p>
+        </div>
+        <!-- CREAR EQUIPO -->
+        <div class="ui large fluid blue buttons">
+            <button class="ui button" id='crear_sucursal'>Crear Sucursal</button>
+            <div class="or"></div>
+            <button class="ui button" id='crear_especialidad'>Crear Especialidad</button>
+            <div class="or"></div>
+            <button class="ui button" id='crear_funcionario'>Crear Funcionario</button>
+        </div>
+        <!-- ASIGNAR EQUIPO -->
+        <h3>Sucursales Habilitadas</h3>
+        <div class="ui left aligned blue segment">
+            <h2 class="ui header">Sucursal 1</h2>
+            <div class="three fluid blue ui buttons">
+                <button class="ui button" id='agregar_funcionario'>Añadir Especialidad</button>
                 <div class="or"></div>
-                <button class="ui button" id='crear_especialidad'>Crear Especialidad</button>
+                <button class="ui button" id='agregar_funcionario'>Añadir Funcionario</button>
                 <div class="or"></div>
-                <button class="ui button" id='crear_funcionario'>Crear Funcionario</button>
+                <button class="ui button"><span>Ver Mas</span></button>
             </div>
-
-          <!-- ASIGNAR EQUIPO -->
-            <h3>Sucursales Habilitadas</h3>
-            <div class="ui left aligned blue segment">
-                <h2 class="ui header">Sucursal 1</h2>
-                <div class="three fluid blue ui buttons">
-                    <button class="ui button" id='agregar_funcionario'>Añadir Especialidad</button>
-                    <div class="or"></div>
-                    <button class="ui button" id='agregar_funcionario'>Añadir Funcionario</button>
-                    <div class="or"></div>
-                    <button class="ui button"><span>Ver Mas</span></button>
+            <div class="ui divider"></div>
+            <div class="ui three wide grid">
+                <div class="two wide column">
+                    <h4>Especialidades Asignadas</h4>
+                    <div class="ui relaxed divided list">
+                        <div class="item">
+                            <div class="content">
+                                <div class="header">Kinesiologos</div>
+                                3
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header">Administrativos</div>
+                                5
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header">Admins</div>
+                                1
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ui divider"></div>
-                <div class="ui three wide grid">
-                    <div class="two wide column">
-                        <h4>Especialidades Asignadas</h4>
-                        <div class="ui relaxed divided list">
-                            <div class="item">
-                                <div class="content">
-                                    <div class="header">Kinesiologos</div>
-                                    3
-                                </div>
+                <div class="six wide column">
+                    <h4>Especialistas Asignados</h4>
+                    <div class="ui celled list">
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar2/small/rachel.png"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                            <div class="content">
+                                <a class="header">Rachel</a>
+                                <div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div>
                             </div>
-                            <div class="item">
-                                <div class="content">
-                                    <div class="header">Administrativos</div>
-                                    5
-                                </div>
+                        </div>
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar2/small/lindsay.png"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/lindsay.png">
+                            <div class="content">
+                                <a class="header">Lindsay</a>
+                                <div class="description">Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
                             </div>
-                            <div class="item">
-                                <div class="content">
-                                    <div class="header">Admins</div>
-                                    1
-                                </div>
+                        </div>
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar2/small/matthew.png"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/matthew.png">
+                            <div class="content">
+                                <a class="header">Matthew</a>
+                                <div class="description">Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/jenny.png">
+                            <div class="content">
+                                <a class="header">Jenny Hess</a>
+                                <div class="description">Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar/small/veronika.jpg"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/veronika.png">
+                            <div class="content">
+                                <a class="header">Veronika Ossi</a>
+                                <div class="description">Has not watched anything recently</div>
                             </div>
                         </div>
                     </div>
-                    <div class="six wide column">
-                        <h4>Especialistas Asignados</h4>
-                        <div class="ui celled list">
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar2/small/rachel.png"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
-                                <div class="content">
-                                    <a class="header">Rachel</a>
-                                    <div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div>
-                                </div>
+                </div>
+                <div class="six wide column">
+                    <h4>Funcionarios Asignados</h4>
+                    <div class="ui celled list">
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar2/small/rachel.png"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                            <div class="content">
+                                <a class="header">Rachel</a>
+                                <div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div>
                             </div>
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar2/small/lindsay.png"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/lindsay.png">
-                                <div class="content">
-                                    <a class="header">Lindsay</a>
-                                    <div class="description">Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
-                                </div>
+                        </div>
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar2/small/lindsay.png"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/lindsay.png">
+                            <div class="content">
+                                <a class="header">Lindsay</a>
+                                <div class="description">Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
                             </div>
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar2/small/matthew.png"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/matthew.png">
-                                <div class="content">
-                                    <a class="header">Matthew</a>
-                                    <div class="description">Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
-                                </div>
+                        </div>
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar2/small/matthew.png"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/matthew.png">
+                            <div class="content">
+                                <a class="header">Matthew</a>
+                                <div class="description">Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
                             </div>
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/jenny.png">
-                                <div class="content">
-                                    <a class="header">Jenny Hess</a>
-                                    <div class="description">Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
-                                </div>
+                        </div>
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/jenny.png">
+                            <div class="content">
+                                <a class="header">Jenny Hess</a>
+                                <div class="description">Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
                             </div>
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar/small/veronika.jpg"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/veronika.png">
-                                <div class="content">
-                                    <a class="header">Veronika Ossi</a>
-                                    <div class="description">Has not watched anything recently</div>
-                                </div>
+                        </div>
+                        <div class="item">
+                            <!-- <img class="ui avatar image" src="/images/avatar/small/veronika.jpg"> -->
+                            <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/veronika.png">
+                            <div class="content">
+                                <a class="header">Veronika Ossi</a>
+                                <div class="description">Has not watched anything recently</div>
                             </div>
                         </div>
                     </div>
-                    <div class="six wide column">
-                        <h4>Funcionarios Asignados</h4>
-                        <div class="ui celled list">
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar2/small/rachel.png"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
-                                <div class="content">
-                                    <a class="header">Rachel</a>
-                                    <div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar2/small/lindsay.png"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/lindsay.png">
-                                <div class="content">
-                                    <a class="header">Lindsay</a>
-                                    <div class="description">Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar2/small/matthew.png"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/matthew.png">
-                                <div class="content">
-                                    <a class="header">Matthew</a>
-                                    <div class="description">Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/jenny.png">
-                                <div class="content">
-                                    <a class="header">Jenny Hess</a>
-                                    <div class="description">Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <!-- <img class="ui avatar image" src="/images/avatar/small/veronika.jpg"> -->
-                                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/veronika.png">
-                                <div class="content">
-                                    <a class="header">Veronika Ossi</a>
-                                    <div class="description">Has not watched anything recently</div>
+                </div>
+                <div class="two wide column">
+                    <h4>Actividades</h4>
+                    <div class="ui relaxed divided list">
+                        <div class="item">
+                            <div class="content">
+                                <!-- <div class="header">Kinesiologos</div> -->
+                                <div class="ui label">
+                                    <i class="mail icon"></i> 23
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="two wide column">
-                        <h4>Actividades</h4>
-                        <div class="ui relaxed divided list">
-                            <div class="item">
-                                <div class="content">
-                                    <!-- <div class="header">Kinesiologos</div> -->
-                                    <div class="ui label">
-                                        <i class="mail icon"></i> 23
-                                    </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="ui label">
+                                    <i class="calendar icon"></i> 23
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="content">
-                                    <div class="ui label">
-                                        <i class="calendar icon"></i> 23
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="content">
-                                    <div class="ui label">
-                                        <i class="users icon"></i>50
-                                    </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="ui label">
+                                    <i class="users icon"></i>50
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-      </div>
-    
+        </div>
+    </div>
     <!-- MODALS -->
       <div class="ui modal crear_sucursal">
           <i class="close icon"></i>
           <div class="header">
-              Profile Picture
+              Nueva Sucursal
           </div>
-          <div class="image content">
-              <div class="ui medium image">
-                  <img src="https://semantic-ui.com/images/avatar2/large/rachel.png">
-              </div>
-              <div class="description">
-                  <div class="ui header">We've auto-chosen a profile image for you.</div>
-                  <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-                  <p>Is it okay to use this photo?</p>
-              </div>
+          <div class="content">
+              <form class="ui form">
+                  <div class="field">
+                      <label>Nombre Sucursal</label>
+                      <input type="text" name="first-name" placeholder="First Name">
+                  </div>
+                  <div class="field">
+                      <label>Región</label>
+                      <select class="ui fluid dropdown">
+                          <option value="">Región</option>
+                          <option value="AL">Alabama</option>
+                          <option value="AK">Alaska</option>
+                          <option value="AZ">Arizona</option>
+                          <option value="AZ">Otro</option>
+                      </select>
+                  </div>
+                  <div class="field">
+                      <label>Provincia</label>
+                      <select class="ui fluid dropdown">
+                          <option value="">Provincia</option>
+                          <option value="AL">Alabama</option>
+                          <option value="AK">Alaska</option>
+                          <option value="AZ">Arizona</option>
+                          <option value="AZ">Otro</option>
+                      </select>
+                  </div>
+                  <div class="field">
+                      <label>Comuna</label>
+                      <select class="ui fluid dropdown">
+                          <option value="">Comuna</option>
+                          <option value="AL">Alabama</option>
+                          <option value="AK">Alaska</option>
+                          <option value="AZ">Arizona</option>
+                          <option value="AZ">Otro</option>
+                      </select>
+                  </div>
+                  <div class="field">
+                      <label>Avenida Principal 101</label>
+                      <input type="text" name="first-name" placeholder="First Name">
+                  </div>
+                  <div class="field">
+                      <label>Horario de Apertura</label>
+                      <select class="ui search dropdown">
+                          <option value="">00:00</option>
+                          <option value="01">01:00</option>
+                          <option value="02">02:00</option>
+                          <option value="03">03:00</option>
+                          <option value="04">04:00</option>
+                          <option value="05">05:00</option>
+                          <option value="06">06:00</option>
+                          <option value="07">07:00</option>
+                          <option value="08">08:00</option>
+                          <option value="09">09:00</option>
+                          <option value="10">10:00</option>
+                          <option value="11">11:00</option>
+                          <option value="12">12:00</option>
+                          <option value="13">13:00</option>
+                          <option value="14">14:00</option>
+                          <option value="15">15:00</option>
+                          <option value="16">16:00</option>
+                          <option value="17">17:00</option>
+                          <option value="18">18:00</option>
+                          <option value="19">19:00</option>
+                          <option value="20">20:00</option>
+                          <option value="21">21:00</option>
+                          <option value="22">22:00</option>
+                          <option value="23">23:00</option>
+                      </select>
+                  </div>
+                  <div class="field">
+                      <label>Horario de Cierre</label>
+                      <select class="ui search dropdown">
+                          <option value="">00:00</option>
+                          <option value="01">01:00</option>
+                          <option value="02">02:00</option>
+                          <option value="03">03:00</option>
+                          <option value="04">04:00</option>
+                          <option value="05">05:00</option>
+                          <option value="06">06:00</option>
+                          <option value="07">07:00</option>
+                          <option value="08">08:00</option>
+                          <option value="09">09:00</option>
+                          <option value="10">10:00</option>
+                          <option value="11">11:00</option>
+                          <option value="12">12:00</option>
+                          <option value="13">13:00</option>
+                          <option value="14">14:00</option>
+                          <option value="15">15:00</option>
+                          <option value="16">16:00</option>
+                          <option value="17">17:00</option>
+                          <option value="18">18:00</option>
+                          <option value="19">19:00</option>
+                          <option value="20">20:00</option>
+                          <option value="21">21:00</option>
+                          <option value="22">22:00</option>
+                          <option value="23">23:00</option>
+                      </select>
+                  </div>
+              </form>
           </div>
           <div class="actions">
               <div class="ui black deny button">
-                  Nope
+                  Atras
               </div>
               <div class="ui positive right labeled icon button">
-                  Yep, that's me
+                  Crear
                   <i class="checkmark icon"></i>
               </div>
           </div>
@@ -257,24 +342,26 @@
       <div class="ui modal crear_especialidad">
           <i class="close icon"></i>
           <div class="header">
-              Profile Picture
+              Crear Especialidad
           </div>
-          <div class="image content">
-              <div class="ui medium image">
-                  <img src="https://semantic-ui.com/images/avatar2/large/rachel.png">
-              </div>
-              <div class="description">
-                  <div class="ui header">We've auto-chosen a profile image for you.</div>
-                  <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-                  <p>Is it okay to use this photo?</p>
-              </div>
+          <div class="content">
+              <form class="ui form">
+                  <div class="field">
+                      <label>Especialidad</label>
+                      <input type="text" name="first-name" placeholder="Especialidad en Espaldas">
+                  </div>
+                  <div class="field">
+                      <label>Descripción</label>
+                      <textarea></textarea>
+                  </div>
+              </form>
           </div>
           <div class="actions">
               <div class="ui black deny button">
-                  Nope
+                  Atras
               </div>
               <div class="ui positive right labeled icon button">
-                  Yep, that's me
+                  Crear
                   <i class="checkmark icon"></i>
               </div>
           </div>
@@ -282,16 +369,297 @@
       <div class="ui modal crear_funcionario">
           <i class="close icon"></i>
           <div class="header">
-              Profile Picture
+              Crear Funcionario
           </div>
-          <div class="image content">
-              <div class="ui medium image">
-                  <img src="https://semantic-ui.com/images/avatar2/large/rachel.png">
+          <div class="content">
+              <form class="ui form">
+                  <h4 class="ui dividing header">Crear Funcionario</h4>
+                  <div class="field">
+                      <label>Gender</label>
+                      <div class="ui selection dropdown">
+                          <input type="hidden" name="gender">
+                          <i class="dropdown icon"></i>
+                          <div class="default text">Gender</div>
+                          <div class="menu">
+                              <div class="item" data-value="1">Male</div>
+                              <div class="item" data-value="0">Female</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="two fields">
+                      <div class="field">
+                          <label>Nombre</label>
+                          <input type="text" name="first-name" placeholder="Nombre">
+                      </div>
+                      <div class="field">
+                          <label>Apellido</label>
+                          <input type="text" name="last-name" placeholder="Apellido">
+                      </div>
+                  </div>
+                  <div class="two fields">
+                      <div class="field">
+                          <label>Rut</label>
+                          <input type="text" name="first-name" placeholder="99.999.999-9">
+                      </div>
+                      <div class="field">
+                          <label>Correo</label>
+                          <input type="text" name="last-name" placeholder="tucorreo@correo.cl">
+                      </div>
+                  </div>
+                  <div class="two fields">
+                      <div class="field">
+                          <label>Numero de Telefono</label>
+                          <input type="text" name="first-name" placeholder="+56989998999">
+                      </div>
+                      <div class="field">
+                          <label>Dirección</label>
+                          <input type="text" name="last-name" placeholder="Avenida Principal 101">
+                      </div>
+                  </div>
+                  <div class="two fields">
+                      <div class="field">
+                          <label>Horario Entrada</label>
+                          <select class="ui fluid dropdown">
+                              <option value="">Elegir</option>
+                              <option value="AL">09:00</option>
+                              <option value="AK">10:00</option>
+                              <option value="AZ">11:00</option>
+                              <option value="AZ">12:00</option>
+                          </select>
+                      </div>
+                      <div class="field">
+                          <label>Horario Salida</label>
+                          <select class="ui fluid dropdown">
+                              <option value="">Elegir</option>
+                              <option value="AL">09:00</option>
+                              <option value="AK">10:00</option>
+                              <option value="AZ">11:00</option>
+                              <option value="AZ">12:00</option>
+                          </select>
+                      </div>
+                  </div>
+                  <h4 class="ui dividing header">Privilegios</h4>
+                  <div class="four fields">
+                      <div class="field">
+                          <div class="ui segment">
+                              <div class="ui toggle checkbox">
+                                  <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                                  <label>Privilegios de Especialista</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <div class="ui segment">
+                              <div class="ui toggle checkbox">
+                                  <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                                  <label>Privilegios de Administrador</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <div class="ui segment">
+                              <div class="ui toggle checkbox">
+                                  <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                                  <label>Privilegios de Administrador</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <div class="ui segment">
+                              <div class="ui toggle checkbox">
+                                  <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                                  <label>Privilegios de Web Admin</label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <h4 class="ui dividing header">Especialidad</h4>
+                  <div class="field">
+                      <label>Especialidad</label>
+                      <select class="ui fluid dropdown">
+                          <option value="">Elegir</option>
+                          <option value="AL">Odontologo</option>
+                          <option value="AK">Kinesiologo</option>
+                          <option value="AZ">Medico General</option>
+                          <option value="AZ">Otorino</option>
+                      </select>
+                  </div>
+                  <h4 class="ui dividing header">Administrativo</h4>
+                  <div class="field">
+                      <label>Especialistas</label>
+                      <div class="ui fluid selection dropdown">
+                          <input type="hidden" name="user">
+                          <i class="dropdown icon"></i>
+                          <div class="default text">Select Friend</div>
+                          <div class="menu">
+                              <div class="item" data-value="jenny">
+                                  <!-- <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg"> -->
+                                  Jenny Hess
+                              </div>
+                              <div class="item" data-value="elliot">
+                                  <!-- <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg"> -->
+                                  Elliot Fu
+                              </div>
+                              <div class="item" data-value="stevie">
+                                  <!-- <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg"> -->
+                                  Stevie Feliciano
+                              </div>
+                              <div class="item" data-value="christian">
+                                  <!-- <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg"> -->
+                                  Christian
+                              </div>
+                              <div class="item" data-value="matt">
+                                  <!-- <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg"> -->
+                                  Matt
+                              </div>
+                              <div class="item" data-value="justen">
+                                  <!-- <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg"> -->
+                                  Justen Kitsune
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <h4 class="ui dividing header">Web Admin</h4>
+                  <div class="field">
+                      <label>Sucursales/label>
+                          <select class="ui fluid dropdown">
+                              <option value="">Elegir</option>
+                              <option value="AL">Sucursal 1</option>
+                              <option value="AK">Sucursal 2</option>
+                              <option value="AZ">Sucursal 3</option>
+                              <option value="AZ">Sucursal 4</option>
+                          </select>
+                  </div>
+              </form>
+          </div>
+          <div class="actions">
+              <div class="ui black deny button">
+                  Atras
               </div>
-              <div class="description">
-                  <div class="ui header">We've auto-chosen a profile image for you.</div>
-                  <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-                  <p>Is it okay to use this photo?</p>
+              <div class="ui positive right labeled icon button">
+                  Crear
+                  <i class="checkmark icon"></i>
+              </div>
+          </div>
+      </div>
+      <div class="ui modal agregar_especialidad">
+          <i class="close icon"></i>
+          <div class="header">
+              Añadir Funcionario a Sucursal.
+          </div>
+          <div class="scrolling content">
+              <div class="ui middle aligned divided list">
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                      <div class="content">
+                          <div class="header">Lena</div>
+                          <div class="description">Secretaria</div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                      <div class="content">
+                          <div class="header">Rachel</div>
+                          <div class="description">Kinesiologa</div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/matthew.png">
+                      <div class="content">
+                          <div class="header">Matthew</div>
+                          <div class="description">Odontologo</div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/molly.png">
+                      <div class="content">
+                          Molly
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                      <div class="content">
+                          Lena
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                      <div class="content">
+                          Lindsay
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/matthew.png">
+                      <div class="content">
+                          Mark
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/molly.png">
+                      <div class="content">
+                          Molly
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                      <div class="content">
+                          Lena
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                      <div class="content">
+                          Lindsay
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/matthew.png">
+                      <div class="content">
+                          Mark
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="right floated content">
+                          <div class="ui button">Add</div>
+                      </div>
+                      <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/small/molly.png">
+                      <div class="content">
+                          Molly
+                      </div>
+                  </div>
               </div>
           </div>
           <div class="actions">
@@ -434,72 +802,73 @@
               </div>
           </div>
       </div>
-    
     <!-- FOOTER -->
-      <div class="ui inverted vertical footer segment">
-          <div class="ui center aligned container">
-              <div class="ui stackable inverted divided grid">
-                  <div class="three wide column">
-                      <h4 class="ui inverted header">Group 1</h4>
-                      <div class="ui inverted link list">
-                          <a href="#" class="item">Link One</a>
-                          <a href="#" class="item">Link Two</a>
-                          <a href="#" class="item">Link Three</a>
-                          <a href="#" class="item">Link Four</a>
-                      </div>
-                  </div>
-                  <div class="three wide column">
-                      <h4 class="ui inverted header">Group 2</h4>
-                      <div class="ui inverted link list">
-                          <a href="#" class="item">Link One</a>
-                          <a href="#" class="item">Link Two</a>
-                          <a href="#" class="item">Link Three</a>
-                          <a href="#" class="item">Link Four</a>
-                      </div>
-                  </div>
-                  <div class="three wide column">
-                      <h4 class="ui inverted header">Group 3</h4>
-                      <div class="ui inverted link list">
-                          <a href="#" class="item">Link One</a>
-                          <a href="#" class="item">Link Two</a>
-                          <a href="#" class="item">Link Three</a>
-                          <a href="#" class="item">Link Four</a>
-                      </div>
-                  </div>
-                  <div class="seven wide column">
-                      <h4 class="ui inverted header">Footer Header</h4>
-                      <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-                  </div>
-              </div>
-              <div class="ui inverted section divider"></div>
-              <img src="assets/images/logo.png" class="ui centered mini image">
-              <div class="ui horizontal inverted small divided link list">
-                  <a class="item" href="#">Site Map</a>
-                  <a class="item" href="#">Contact Us</a>
-                  <a class="item" href="#">Terms and Conditions</a>
-                  <a class="item" href="#">Privacy Policy</a>
-              </div>
-              <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                  <a href="#"> digitalclinic.cl</a>
-              </div>
-          </div>
-      </div>
-    
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui stackable inverted divided grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 1</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 2</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 3</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Footer Header</h4>
+                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <img src="assets/images/logo.png" class="ui centered mini image">
+            <div class="ui horizontal inverted small divided link list">
+                <a class="item" href="#">Site Map</a>
+                <a class="item" href="#">Contact Us</a>
+                <a class="item" href="#">Terms and Conditions</a>
+                <a class="item" href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="#"> digitalclinic.cl</a>
+            </div>
+        </div>
+    </div>
     <!-- SCRIPTS -->
-      <script type="text/javascript">
-      $("#crear_sucursal").click(function() {
-          $(".crear_sucursal").modal('show');
-      });
-      $("#crear_especialidad").click(function() {
-          $(".crear_especialidad").modal('show');
-      });
-      $("#crear_funcionario").click(function() {
-          $(".crear_funcionario").modal('show');
-      });
-      $("#agregar_funcionario").click(function() {
-          $(".agregar_funcionario").modal('show');
-      });
-      </script>
+    <script type="text/javascript">
+    $("#crear_sucursal").click(function() {
+        $(".crear_sucursal").modal('show');
+    });
+    $("#crear_especialidad").click(function() {
+        $(".crear_especialidad").modal('show');
+    });
+    $("#crear_funcionario").click(function() {
+        $(".crear_funcionario").modal('show');
+    });
+    $("#agregar_funcionario").click(function() {
+        $(".agregar_funcionario").modal('show');
+    });
+
+    $('select.dropdown')
+        .dropdown();
+    </script>
 </body>
 
 </html>
