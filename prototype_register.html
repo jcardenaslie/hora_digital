@@ -1,39 +1,103 @@
 <link rel="stylesheet" type="text/css" href="semantic-dist/semantic.min.css">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="semantic/dist/semantic.min.js"></script>
-<div class="ui attached message">
-    <div class="header">
-        Welcome to our site!
-    </div>
-    <p>Fill out the form below to sign-up for a new account</p>
-</div>
-<form class="ui form attached fluid segment">
-    <div class="two fields">
-        <div class="field">
-            <label>First Name</label>
-            <input placeholder="First Name" type="text">
+
+<div class="ui centered grid container">
+    <div class="nine wide column">
+        <h2 class="ui center aligned icon header">
+                <i class="user outline icon"></i>
+<!--                 <div class="content">
+                  Wellcome Back!
+                </div> -->
+              </h2>
+        <div class="ui attached message">
+            <div class="header">
+                Bienvenido!
+            </div>
+            <p>Llena el siguiente formulario para empezar a usar la plataforma.</p>
         </div>
-        <div class="field">
-            <label>Last Name</label>
-            <input placeholder="Last Name" type="text">
+        <form class="ui form attached fluid segment">
+            <h3 class="ui dividing header">Principal</h3>
+            <div class="field">
+                <label>Nombre Centro Medico</label>
+                <input type="text" placeholder="Consulta Revive tu Salud">
+            </div>
+            <div class="field">
+                <label>Nombre Legal Centro Medico</label>
+                <input type="text" placeholder="Consulta Revive tu Salud Spa">
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Nombre</label>
+                    <input placeholder="Nombre" type="text">
+                </div>
+                <div class="field">
+                    <label>Apellido</label>
+                    <input placeholder="Apellido" type="text">
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Rut Empresa</label>
+                    <input placeholder="99.999.999-9" type="text">
+                </div>
+                <div class="field">
+                    <label>Dirección Legal</label>
+                    <input placeholder="Nueva Avenida 1415" type="text">
+                </div>
+            </div>
+            <h3 class="ui dividing header">Cuenta</h3>
+            <div class="field">
+                <label>Correo</label>
+                <input type="email" placeholder="correoadmin@correo.cl">
+            </div>
+            <div class="field">
+                <label>Contraseña</label>
+                <input type="password">
+            </div>
+            <div class="field">
+                <label>Rescribir Contraseña</label>
+                <input type="password">
+            </div>
+            <div class="ui segment">
+                <div class="field">
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                    <label>Soy la persona propietaria de la consulta.</label>
+                </div>
+                </div>
+            </div>
+            <!-- <h4 class="ui dividing header">Cuenta de Administrador</h4>
+            <div class="two fields">
+                <div class="field">
+                    <label>Nombres</label>
+                    <input placeholder="Nombre1 Nombre2" type="text">
+                </div>
+                <div class="field">
+                    <label>Apellidos</label>
+                    <input placeholder="Apellido1 Apellido2" type="text">
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Rut</label>
+                    <input placeholder="99.999.999-9" type="text">
+                </div>
+                <div class="field">
+                    <label>Correo</label>
+                    <input placeholder="tucorreo@corre.cl" type="text">
+                </div>
+            </div> -->
+            <div class="inline field">
+                <div class="ui checkbox">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">Acepto los terminos y condiciones</label>
+                </div>
+            </div>
+            <div class="ui blue submit button">Crear</div>
+        </form>
+        <div class="ui bottom attached warning message">
+            <i class="icon help"></i> Ya tienes una cuenta? <a href="#">Entra aca</a>.
         </div>
     </div>
-    <div class="field">
-        <label>Username</label>
-        <input placeholder="Username" type="text">
-    </div>
-    <div class="field">
-        <label>Password</label>
-        <input type="password">
-    </div>
-    <div class="inline field">
-        <div class="ui checkbox">
-            <input type="checkbox" id="terms">
-            <label for="terms">I agree to the terms and conditions</label>
-        </div>
-    </div>
-    <div class="ui blue submit button">Submit</div>
-</form>
-<div class="ui bottom attached warning message">
-    <i class="icon help"></i> Already signed up? <a href="#">Login here</a> instead.
 </div>
